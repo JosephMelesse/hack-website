@@ -1,0 +1,97 @@
+{
+  "en": {
+    "translate": "",
+    "phone": "",
+    "nav": {
+      "home": "",
+      "menu": "",
+      "about": "",
+      "contact": "",
+      "call": ""
+    },
+    "home": {
+      "heroTitle": "",
+      "heroText": "",
+      "featuredTitle": "",
+      "featured": [""],
+      "aboutTeaserTitle": "",
+      "aboutTeaser": ""
+    },
+    "menu": {
+      "title": "",
+      "items": [
+        {
+          "name": "",
+          "description": "",
+          "price": ""
+        }
+      ]
+    },
+    "about": {
+      "title": "",
+      "story": ""
+    },
+    "contact": {
+      "callTitle": "",
+      "findTitle": "",
+      "address": "",
+      "mapNote": ""
+    },
+    "footer": {
+      "hoursTitle": "",
+      "hours": [""],
+      "addressTitle": "",
+      "address": "",
+      "socialTitle": "",
+      "social": [{ "label": "", "url": "" }]
+    }
+  },
+
+  "es": {
+    "translate": "",
+    "phone": "",
+    "nav": {
+      "home": "",
+      "menu": "",
+      "about": "",
+      "contact": "",
+      "call": ""
+    },
+    "home": {
+      "heroTitle": "",
+      "heroText": "",
+      "featuredTitle": "",
+      "featured": [""],
+      "aboutTeaserTitle": "",
+      "aboutTeaser": ""
+    },
+    "menu": {
+      "title": "",
+      "items": [
+        {
+          "name": "",
+          "description": "",
+          "price": ""
+        }
+      ]
+    },
+    "about": {
+      "title": "",
+      "story": ""
+    },
+    "contact": {
+      "callTitle": "",
+      "findTitle": "",
+      "address": "",
+      "mapNote": ""
+    },
+    "footer": {
+      "hoursTitle": "",
+      "hours": [""],
+      "addressTitle": "",
+      "address": "",
+      "socialTitle": "",
+      "social": [{ "label": "", "url": "" }]
+    }
+  }
+}
