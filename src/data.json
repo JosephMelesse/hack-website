@@ -1,97 +1,158 @@
 {
   "en": {
-    "translate": "",
-    "phone": "",
+    "translate": "Español",
+    "phone": "+1-555-123-4567",
     "nav": {
-      "home": "",
-      "menu": "",
-      "about": "",
-      "contact": "",
-      "call": ""
+      "home": "Home",
+      "menu": "Menu",
+      "about": "About",
+      "contact": "Contact",
+      "call": "Call Us"
     },
     "home": {
-      "heroTitle": "",
-      "heroText": "",
-      "featuredTitle": "",
-      "featured": [""],
-      "aboutTeaserTitle": "",
-      "aboutTeaser": ""
+      "heroTitle": "Casa Verde",
+      "heroText": "Fresh, homestyle Mexican cooking in the heart of the city.",
+      "featuredTitle": "Featured Dishes",
+      "featured": [
+        "Tacos al Pastor",
+        "Chiles Rellenos",
+        "Horchata"
+      ],
+      "aboutTeaserTitle": "Our Story",
+      "aboutTeaser": "Family-owned since 1998. Read more about us on the About page."
     },
     "menu": {
-      "title": "",
+      "title": "Menu",
       "items": [
         {
-          "name": "",
-          "description": "",
-          "price": ""
+          "name": "Tacos al Pastor",
+          "description": "Marinated pork, pineapple, cilantro, and onion",
+          "price": "$11"
+        },
+        {
+          "name": "Chiles Rellenos",
+          "description": "Roasted poblano peppers stuffed with cheese",
+          "price": "$13"
+        },
+        {
+          "name": "Pozole Rojo",
+          "description": "Hominy stew with pork and red chile",
+          "price": "$14"
+        },
+        {
+          "name": "Horchata",
+          "description": "Sweet rice and cinnamon drink",
+          "price": "$4"
         }
       ]
     },
     "about": {
-      "title": "",
-      "story": ""
+      "title": "About Casa Verde",
+      "story": "Casa Verde started as a weekend food stand in 1998, run by the Herrera family out of a single cart. Twenty-five years later we serve the same family recipes from our kitchen downtown, with ingredients from local farms and tortillas made fresh every morning."
     },
     "contact": {
-      "callTitle": "",
-      "findTitle": "",
-      "address": "",
-      "mapNote": ""
+      "callTitle": "Call Us",
+      "findTitle": "Find Us",
+      "address": "123 Mission St, San Jose, CA 95110",
+      "mapNote": "Map embed coming soon"
     },
     "footer": {
-      "hoursTitle": "",
-      "hours": [""],
-      "addressTitle": "",
-      "address": "",
-      "socialTitle": "",
-      "social": [{ "label": "", "url": "" }]
+      "hoursTitle": "Hours",
+      "hours": [
+        "Mon-Fri: 11am - 9pm",
+        "Sat-Sun: 10am - 10pm"
+      ],
+      "addressTitle": "Address",
+      "address": "123 Mission St, San Jose, CA 95110",
+      "socialTitle": "Follow Us",
+      "social": [
+        {
+          "label": "Instagram",
+          "url": "https://instagram.com/casaverde"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://facebook.com/casaverde"
+        }
+      ]
     }
   },
-
   "es": {
-    "translate": "",
-    "phone": "",
+    "translate": "English",
+    "phone": "+1-555-123-4567",
     "nav": {
-      "home": "",
-      "menu": "",
-      "about": "",
-      "contact": "",
-      "call": ""
+      "home": "Inicio",
+      "menu": "Menú",
+      "about": "Nosotros",
+      "contact": "Contacto",
+      "call": "Llámanos"
     },
     "home": {
-      "heroTitle": "",
-      "heroText": "",
-      "featuredTitle": "",
-      "featured": [""],
-      "aboutTeaserTitle": "",
-      "aboutTeaser": ""
+      "heroTitle": "Casa Verde",
+      "heroText": "Cocina mexicana casera y fresca en el corazón de la ciudad.",
+      "featuredTitle": "Platillos Destacados",
+      "featured": [
+        "Tacos al Pastor",
+        "Chiles Rellenos",
+        "Horchata"
+      ],
+      "aboutTeaserTitle": "Nuestra Historia",
+      "aboutTeaser": "Negocio familiar desde 1998. Conoce más en la página Nosotros."
     },
     "menu": {
-      "title": "",
+      "title": "Menú",
       "items": [
         {
-          "name": "",
-          "description": "",
-          "price": ""
+          "name": "Tacos al Pastor",
+          "description": "Cerdo marinado, piña, cilantro y cebolla",
+          "price": "$11"
+        },
+        {
+          "name": "Chiles Rellenos",
+          "description": "Chiles poblanos asados rellenos de queso",
+          "price": "$13"
+        },
+        {
+          "name": "Pozole Rojo",
+          "description": "Caldo de maíz pozolero con cerdo y chile rojo",
+          "price": "$14"
+        },
+        {
+          "name": "Horchata",
+          "description": "Bebida dulce de arroz con canela",
+          "price": "$4"
         }
       ]
     },
     "about": {
-      "title": "",
-      "story": ""
+      "title": "Sobre Casa Verde",
+      "story": "Casa Verde comenzó como un puesto de comida de fin de semana en 1998, atendido por la familia Herrera desde un solo carrito. Veinticinco años después servimos las mismas recetas familiares desde nuestra cocina en el centro, con ingredientes de granjas locales y tortillas hechas frescas cada mañana."
     },
     "contact": {
-      "callTitle": "",
-      "findTitle": "",
-      "address": "",
-      "mapNote": ""
+      "callTitle": "Llámanos",
+      "findTitle": "Encuéntranos",
+      "address": "123 Mission St, San Jose, CA 95110",
+      "mapNote": "Mapa próximamente"
     },
     "footer": {
-      "hoursTitle": "",
-      "hours": [""],
-      "addressTitle": "",
-      "address": "",
-      "socialTitle": "",
-      "social": [{ "label": "", "url": "" }]
+      "hoursTitle": "Horario",
+      "hours": [
+        "Lun-Vie: 11am - 9pm",
+        "Sáb-Dom: 10am - 10pm"
+      ],
+      "addressTitle": "Dirección",
+      "address": "123 Mission St, San Jose, CA 95110",
+      "socialTitle": "Síguenos",
+      "social": [
+        {
+          "label": "Instagram",
+          "url": "https://instagram.com/casaverde"
+        },
+        {
+          "label": "Facebook",
+          "url": "https://facebook.com/casaverde"
+        }
+      ]
     }
   }
 }
