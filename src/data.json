@@ -1,5 +1,5 @@
 {
-  "en": {
+  "es": {
     "translate": "Español",
     "phone": "+52 475 403 7014 or +52 395 115 5068",
     "nav": {
@@ -75,7 +75,7 @@
     }
   },
 
-  "es": {
+  "en": {
     "translate": "English",
     "phone": "+52 475 403 7014 Ó, +52 395 115 5068",
     "nav": {
@@ -88,19 +88,47 @@
     "home": {
       "heroTitle": "Gorditas Santa Maria",
       "heroText": "Cocina Mexicana casera  y fresca del ",
-      "featuredTitle": "67",
-      "featured": [""],
-      "aboutTeaserTitle": "",
-      "aboutTeaser": ""
+      "featuredTitle": "Los Famosos Gorditas",
+      "featured": ["Gorditas"],
+      "aboutTeaserTitle": "Nuestra Historia",
+      "aboutTeaser": "why was this resutrant stared. How did tit devleope through time, menu changes workors, goals, how did grow, how did it immact the community ."
     },
     "menu": {
-      "title": "",
+      "title": "Que se le entoja",
       "items": [
         {
-          "name": "",
+         "name": "Hamurgersa",
+          "description": "vente a comer unas hamugersas delisiosa todo lo que hay",
+          "price": "$67"
+        },
+        {
+          "name": "Tacos habiertos",
+          "description":"tacos abirtos vienevn con frijoles y salsa con carne",
+          "price": "$67"
+        },
+        {
+          "name": "Sandwiches",
           "description": "",
-          "price": ""
-        }
+          "price": "$67"
+        },
+        {
+          "name": "Milkshakes",
+          "description": "Made with raw milk, these shakes can come in multiple flavors so just ask what they got in the front",
+          "price": "$67"
+        },
+        {
+          
+          "name": "Tortas",
+          "description": "Made on the fly with freah ingreadants",
+          "price": "$67"
+        },
+        {
+          
+          "name": "Gorditas",
+          "description": "You can order them with beans, cheese, and salsa with meat",
+          "price": "$67"
+        }      
+        
       ]
     },
     "about": {
