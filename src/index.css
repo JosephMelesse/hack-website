@@ -166,6 +166,65 @@ p {
   background-size: 56px 14px;
 }
 
+/* ---------- header ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--crema-card);
+}
+
+.site-header__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding-block: 0.6rem;
+}
+
+.site-header__brand img {
+  border-radius: 50%;
+}
+
+.site-header__actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.site-nav {
+  order: 3;
+  width: 100%;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.site-nav a {
+  font-weight: 700;
+  color: var(--tinta);
+  text-decoration: none;
+  padding-block: 0.25rem;
+  border-bottom: 3px solid transparent;
+}
+
+.site-nav a:hover {
+  border-bottom-color: var(--cempasuchil);
+}
+
+.site-nav a.active {
+  border-bottom-color: var(--rojo);
+}
+
+@media (min-width: 760px) {
+  .site-nav {
+    order: 0;
+    width: auto;
+    margin-inline: auto;
+  }
+}
+
 /* ---------- motion ---------- */
 
 @media (prefers-reduced-motion: reduce) {
