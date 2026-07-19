@@ -1,16 +1,35 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
+import TranslateButton from "./TranslateButton.jsx";
+import logo from "../assets/logo.png";
 
-// Route links work; styling and the real phone number are TODO.
-function Nav() {
+// Header per wireframe pp. 01-02: logo left, links center, actions right;
+// on mobile the links drop to a second row.
+function Nav({ t, spanish, onToggle }) {
   return (
-    <nav>
-      <Link to="/">Home</Link>
-      <Link to="/menu">Menu</Link>
-      <Link to="/about">About</Link>
-      <Link to="/contact">Contact</Link>
-      {/* TODO : replace # with tel: link once phone number is set */}
-      <a href="#">Call Us</a>
-    </nav>
+    <header className="site-header">
+      <div className="container site-header__bar">
+        <Link to="/" className="site-header__brand">
+          <img src={logo} alt="Gorditas Santa Maria" width="56" height="56" />
+        </Link>
+        <nav className="site-nav" aria-label="Main">
+          <NavLink to="/">{t?.nav?.home}</NavLink>
+          <NavLink to="/menu">{t?.nav?.menu}</NavLink>
+          <NavLink to="/about">{t?.nav?.about}</NavLink>
+          <NavLink to="/contact">{t?.nav?.contact}</NavLink>
+        </nav>
+        <div className="site-header__actions">
+          <TranslateButton
+            spanish={spanish}
+            onToggle={onToggle}
+            label={t?.translate}
+          />
+          <a className="btn" href={`tel:${t?.phone}`}>
+            {t?.nav?.call}
+          </a>
+        </div>
+      </div>
+      <div className="tile-divider" aria-hidden="true"></div>
+    </header>
   );
 }
 

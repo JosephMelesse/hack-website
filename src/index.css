@@ -1,0 +1,513 @@
+/* ============================================================
+   Gorditas Santa Maria — theme
+   Palette sampled from the badge logo (see DESIGN.md §2).
+   Order: tokens → base → typography → shared → (header/footer
+   and per-page sections land with their own branches)
+   ============================================================ */
+
+/* ---------- tokens ---------- */
+
+:root {
+  /* color — sampled from the logo */
+  --crema: #f6efdc;
+  --crema-card: #fdf8ea;
+  --tinta: #33241c;
+  --rojo: #a32c26;
+  --rojo-dark: #86211c;
+  --cobalto: #274e8d;
+  --cobalto-dark: #1e3d70;
+  --cempasuchil: #e4a23c; /* decoration only, never text on cream */
+  --nopal: #567d46;
+  --azulejo: #4d93a6;
+
+  /* type */
+  --font-display: "Alfa Slab One", "Rockwell", "Roboto Slab", serif;
+  --font-body: "Karla", system-ui, -apple-system, sans-serif;
+  --size-hero: clamp(2.2rem, 5vw + 1rem, 3.5rem);
+  --size-title: clamp(2rem, 3.5vw + 1rem, 2.75rem);
+  --size-heading: clamp(1.4rem, 1.5vw + 1rem, 1.75rem);
+
+  /* layout */
+  --container: 1080px;
+  --space: 1rem;
+  --radius: 6px;
+}
+
+/* ---------- base ---------- */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--crema);
+  color: var(--tinta);
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+img,
+svg,
+video,
+iframe {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: var(--cobalto);
+  text-decoration-color: color-mix(in srgb, var(--cobalto) 40%, transparent);
+  text-underline-offset: 3px;
+  transition: text-decoration-color 150ms ease;
+}
+
+a:hover {
+  text-decoration-color: var(--cempasuchil);
+}
+
+::selection {
+  background: var(--cempasuchil);
+  color: var(--tinta);
+}
+
+:focus-visible {
+  outline: 3px solid var(--cobalto);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ---------- typography ---------- */
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: 400; /* Alfa Slab One ships a single weight */
+  line-height: 1.15;
+  margin: 0 0 0.5em;
+  color: var(--tinta);
+}
+
+h1 {
+  font-size: var(--size-title);
+  color: var(--rojo);
+}
+
+h2 {
+  font-size: var(--size-heading);
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+.eyebrow {
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: color-mix(in srgb, var(--tinta) 75%, var(--crema));
+  margin: 0 0 0.75em;
+}
+
+/* ---------- shared ---------- */
+
+.container {
+  max-width: var(--container);
+  margin-inline: auto;
+  padding-inline: calc(var(--space) * 1.25);
+}
+
+.btn {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.65em 1.4em;
+  border: 0;
+  border-radius: var(--radius);
+  background: var(--rojo);
+  color: var(--crema-card);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 150ms ease;
+}
+
+.btn:hover {
+  background: var(--rojo-dark);
+}
+
+.btn--cobalto {
+  background: var(--cobalto);
+}
+
+.btn--cobalto:hover {
+  background: var(--cobalto-dark);
+}
+
+.card {
+  background: var(--crema-card);
+  border: 1px solid color-mix(in srgb, var(--tinta) 12%, transparent);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+/* Talavera divider — the site's signature motif, sampled from the
+   logo's tile ring. Used in exactly three places (DESIGN.md §2). */
+.tile-divider {
+  height: 14px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='56' height='14'%3E%3Cg fill='%23e4a23c'%3E%3Ccircle cx='7' cy='3.4' r='2.4'/%3E%3Ccircle cx='7' cy='10.6' r='2.4'/%3E%3Ccircle cx='3.4' cy='7' r='2.4'/%3E%3Ccircle cx='10.6' cy='7' r='2.4'/%3E%3C/g%3E%3Ccircle cx='7' cy='7' r='1.5' fill='%23f6efdc'/%3E%3Cg fill='%23567d46'%3E%3Ccircle cx='21' cy='3.4' r='2.4'/%3E%3Ccircle cx='21' cy='10.6' r='2.4'/%3E%3Ccircle cx='17.4' cy='7' r='2.4'/%3E%3Ccircle cx='24.6' cy='7' r='2.4'/%3E%3C/g%3E%3Ccircle cx='21' cy='7' r='1.5' fill='%23f6efdc'/%3E%3Cg fill='%234d93a6'%3E%3Ccircle cx='35' cy='3.4' r='2.4'/%3E%3Ccircle cx='35' cy='10.6' r='2.4'/%3E%3Ccircle cx='31.4' cy='7' r='2.4'/%3E%3Ccircle cx='38.6' cy='7' r='2.4'/%3E%3C/g%3E%3Ccircle cx='35' cy='7' r='1.5' fill='%23f6efdc'/%3E%3Cg fill='%23a32c26'%3E%3Ccircle cx='49' cy='3.4' r='2.4'/%3E%3Ccircle cx='49' cy='10.6' r='2.4'/%3E%3Ccircle cx='45.4' cy='7' r='2.4'/%3E%3Ccircle cx='52.6' cy='7' r='2.4'/%3E%3C/g%3E%3Ccircle cx='49' cy='7' r='1.5' fill='%23f6efdc'/%3E%3C/svg%3E");
+  background-repeat: repeat-x;
+  background-size: 56px 14px;
+}
+
+/* ---------- header ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: var(--crema-card);
+}
+
+.site-header__bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 1rem;
+  padding-block: 0.6rem;
+}
+
+.site-header__brand img {
+  border-radius: 50%;
+}
+
+.site-header__actions {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* the TranslateButton stub renders an empty <button>; keep it hidden
+   until it has a label */
+.site-header__actions button:empty {
+  display: none;
+}
+
+.site-nav {
+  order: 3;
+  width: 100%;
+  display: flex;
+  gap: 1.25rem;
+}
+
+.site-nav a {
+  font-weight: 700;
+  color: var(--tinta);
+  text-decoration: none;
+  padding-block: 0.25rem;
+  border-bottom: 3px solid transparent;
+}
+
+.site-nav a:hover {
+  border-bottom-color: var(--cempasuchil);
+}
+
+.site-nav a.active {
+  border-bottom-color: var(--rojo);
+}
+
+@media (min-width: 760px) {
+  .site-nav {
+    order: 0;
+    width: auto;
+    margin-inline: auto;
+  }
+}
+
+/* ---------- footer ---------- */
+
+.site-footer {
+  background: var(--tinta);
+  color: var(--crema);
+  margin-top: 3rem;
+}
+
+.site-footer__grid {
+  display: grid;
+  gap: 1.5rem;
+  padding-block: 2rem 1rem;
+}
+
+.site-footer .eyebrow {
+  color: color-mix(in srgb, var(--crema) 70%, var(--tinta));
+}
+
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer li {
+  margin-bottom: 0.35rem;
+}
+
+.site-footer a {
+  color: var(--crema);
+}
+
+.site-footer a:hover {
+  text-decoration-color: var(--cempasuchil);
+}
+
+.site-footer__brand {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-block: 0.75rem 1.5rem;
+  font-family: var(--font-display);
+}
+
+.site-footer__brand img {
+  border-radius: 50%;
+}
+
+@media (min-width: 760px) {
+  .site-footer__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* ---------- home ---------- */
+
+.home-hero {
+  padding-block: 2.5rem 3rem;
+}
+
+.home-hero__grid {
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+}
+
+.home-hero__copy p {
+  font-size: 1.1rem;
+  max-width: 46ch;
+}
+
+.home-hero__photo {
+  order: -1;
+}
+
+.home-hero__photo img {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  border-radius: var(--radius) var(--radius) 0 0;
+}
+
+.home-about {
+  padding-block: 1rem 2.5rem;
+}
+
+.home-about__grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.home-about__photo img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.home-video {
+  max-width: 480px;
+  margin-top: 1.5rem;
+}
+
+.home-video iframe,
+.home-video__facade {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  border-radius: var(--radius);
+}
+
+.home-video__facade {
+  position: relative;
+  display: block;
+  padding: 0;
+  overflow: hidden;
+  cursor: pointer;
+  background: var(--tinta);
+}
+
+.home-video__facade img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.85;
+  transition: opacity 150ms ease;
+}
+
+.home-video__facade:hover img {
+  opacity: 1;
+}
+
+.home-video__play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  background: var(--rojo);
+  color: var(--crema-card);
+  display: grid;
+  place-items: center;
+  font-size: 1.4rem;
+  padding-left: 4px;
+}
+
+.home-featured {
+  padding-block: 1rem 2.5rem;
+}
+
+.home-featured__grid {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.home-featured__card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.home-featured__row {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.75rem 1rem;
+}
+
+.home-featured__row h3 {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  margin: 0;
+}
+
+.home-featured__price {
+  font-weight: 700;
+  color: var(--rojo);
+}
+
+.home-featured__more {
+  display: inline-block;
+  margin-top: 1.25rem;
+  font-weight: 700;
+}
+
+.home-strip {
+  background: var(--crema-card);
+  padding-block: 1.5rem;
+}
+
+.home-strip__grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.home-strip p {
+  margin: 0;
+}
+
+@media (min-width: 760px) {
+  .home-hero__grid {
+    grid-template-columns: 1.05fr 1fr;
+  }
+
+  .home-hero__photo {
+    order: 0;
+  }
+
+  .home-hero h1 {
+    font-size: var(--size-hero);
+  }
+
+  .home-about__grid {
+    grid-template-columns: 1fr 1.2fr;
+    align-items: center;
+  }
+
+  .home-featured__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .home-strip__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- contact ---------- */
+
+.contact {
+  padding-block: 2.5rem 3rem;
+}
+
+.contact-call {
+  max-width: 560px;
+  margin-block: 1.5rem 2rem;
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.contact-call__phone {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4vw + 0.5rem, 2.6rem);
+  color: var(--rojo);
+  text-decoration-color: color-mix(in srgb, var(--rojo) 35%, transparent);
+}
+
+.contact-call__phone:hover {
+  text-decoration-color: var(--rojo);
+}
+
+.contact-find p {
+  max-width: 60ch;
+}
+
+.contact-map {
+  margin-top: 1rem;
+  max-width: 720px;
+  aspect-ratio: 16 / 9;
+  display: grid;
+  place-items: center;
+  background: var(--crema-card);
+  border: 3px dashed color-mix(in srgb, var(--cempasuchil) 70%, var(--tinta));
+  border-radius: var(--radius);
+  color: color-mix(in srgb, var(--tinta) 75%, var(--crema));
+  font-weight: 700;
+}
+
+/* ---------- motion ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    transition: none !important;
+    animation: none !important;
+  }
+}
