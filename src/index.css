@@ -572,9 +572,29 @@ p {
   margin-bottom: 1.5rem;
 }
 
-.menu .eyebrow {
-  margin-top: 2rem;
-  margin-bottom: 0.75rem;
+.menu-toggle {
+  display: inline-flex;
+  margin-bottom: 1.5rem;
+  border: 2px solid var(--rojo);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.menu-toggle button {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.55em 1.4em;
+  border: 0;
+  background: transparent;
+  color: var(--rojo);
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease;
+}
+
+.menu-toggle .is-current {
+  background: var(--rojo);
+  color: var(--crema-card);
 }
 
 .menu-list {
