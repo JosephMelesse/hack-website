@@ -31,7 +31,7 @@ function Footer({ t }) {
       </div>
       <div className="container site-footer__brand">
         <img src={logo} alt="" width="56" height="56" />
-        <span>Desde 1983</span>
+        <span>{t?.footer?.since}</span>
       </div>
     </footer>
   );
