@@ -1,24 +1,34 @@
 // MENU: Tasfia
-import data from "../data.json";
-function Menu() {
+// Menu per wireframe pp. 03-04: morning and evening sections, card per dish.
+function Menu({ t }) {
+  const sections = [
+    { title: t?.menu?.morningTitle, items: t?.menu?.morning?.items ?? [] },
+    { title: t?.menu?.eveningTitle, items: t?.menu?.evening?.items ?? [] },
+  ];
+
   return (
-    <section>
-      {/* TODO (Tasfia): menu list */}
-      {/* retrieve data from data.json*/}
-      <h2>{data.es.menu.title}</h2>
-      <ul>
-        {data.es.menu.items.map((item, index) => (
-          <li key={index}>
-            <h3>{item.name}</h3>
-            <p>{item.description}</p>
-            <span>{item.price}</span>
-          </li>
+    <section className="menu">
+      <div className="container">
+        <h1>{t?.menu?.title}</h1>
+        {sections.map((section) => (
+          <section key={section.title}>
+            <h2 className="eyebrow">{section.title}</h2>
+            <ul className="menu-list">
+              {section.items.map((item, index) => (
+                <li className="card menu-item" key={index}>
+                  <div className="menu-item__row">
+                    <h3>{item?.name}</h3>
+                    <span className="menu-item__price">{item?.price}</span>
+                  </div>
+                  <p>{item?.description}</p>
+                </li>
+              ))}
+            </ul>
+          </section>
         ))}
-      </ul>
+      </div>
     </section>
   );
 }
 
 export default Menu;
-
-  
