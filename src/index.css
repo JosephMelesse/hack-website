@@ -491,6 +491,9 @@ p {
 }
 
 .contact-call__phone {
+  display: block;
+  width: fit-content;
+  margin-inline: auto;
   font-family: var(--font-display);
   font-size: clamp(1.8rem, 4vw + 0.5rem, 2.6rem);
   color: var(--rojo);
