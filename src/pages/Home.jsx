@@ -42,12 +42,80 @@ function Home({ t }) {
               {t?.nav?.call} · {t?.phones?.[0]?.display}
             </a>
           </div>
-          <div className="home-hero__photo">
-            <img
-              src={heroImg}
-              alt="Fresh tortillas, al pastor, and filled gorditas on the griddle"
-            />
-            <div className="tile-divider" aria-hidden="true"></div>
+          <div className="home-hero__featured">
+            <div
+              className="home-featured__stage"
+              onMouseEnter={() => setFeatPaused(true)}
+              onMouseLeave={() => setFeatPaused(false)}
+            >
+              {featured.map((name, i) => (
+                <article
+                  className={
+                    "card home-featured__card" +
+                    (i === activeFeat ? " home-featured__card--active" : "")
+                  }
+                  key={name}
+                  aria-hidden={i !== activeFeat}
+                >
+                  <img
+                    src={FEATURED_IMGS[i % FEATURED_IMGS.length]}
+                    alt={name}
+                  />
+                  <div className="home-featured__row">
+                    <h3>{name}</h3>
+                    <span className="home-featured__price">
+                      {items.find((item) => item?.name === name)?.price}
+                    </span>
+                  </div>
+                </article>
+              ))}
+            </div>
+            {featured.length > 1 && (
+              <div
+                className="home-featured__controls"
+                onMouseEnter={() => setFeatPaused(true)}
+                onMouseLeave={() => setFeatPaused(false)}
+                onFocus={() => setFeatPaused(true)}
+                onBlur={() => setFeatPaused(false)}
+              >
+                <button
+                  type="button"
+                  className="home-featured__arrow"
+                  aria-label={
+                    featured[(activeFeat + featured.length - 1) % featured.length]
+                  }
+                  onClick={() =>
+                    setFeatIndex(
+                      (activeFeat + featured.length - 1) % featured.length
+                    )
+                  }
+                >
+                  ‹
+                </button>
+                <div className="home-featured__dots">
+                  {featured.map((name, i) => (
+                    <button
+                      type="button"
+                      key={name}
+                      className={i === activeFeat ? "is-current" : undefined}
+                      aria-label={name}
+                      aria-pressed={i === activeFeat}
+                      onClick={() => setFeatIndex(i)}
+                    />
+                  ))}
+                </div>
+                <button
+                  type="button"
+                  className="home-featured__arrow"
+                  aria-label={featured[(activeFeat + 1) % featured.length]}
+                  onClick={() =>
+                    setFeatIndex((activeFeat + 1) % featured.length)
+                  }
+                >
+                  ›
+                </button>
+              </div>
+            )}
           </div>
         </div>
       </section>
@@ -90,51 +158,13 @@ function Home({ t }) {
       <section className="home-featured">
         <div className="container">
           <h2 className="eyebrow">{t?.home?.featuredTitle}</h2>
-          <div
-            className="home-featured__stage"
-            onMouseEnter={() => setFeatPaused(true)}
-            onMouseLeave={() => setFeatPaused(false)}
-          >
-            {featured.map((name, i) => (
-              <article
-                className={
-                  "card home-featured__card" +
-                  (i === activeFeat ? " home-featured__card--active" : "")
-                }
-                key={name}
-                aria-hidden={i !== activeFeat}
-              >
-                <img
-                  src={FEATURED_IMGS[i % FEATURED_IMGS.length]}
-                  alt={name}
-                />
-                <div className="home-featured__row">
-                  <h3>{name}</h3>
-                  <span className="home-featured__price">
-                    {items.find((item) => item?.name === name)?.price}
-                  </span>
-                </div>
-              </article>
-            ))}
+          <div className="home-featured__photo">
+            <img
+              src={heroImg}
+              alt="Fresh tortillas, al pastor, and filled gorditas on the griddle"
+            />
+            <div className="tile-divider" aria-hidden="true"></div>
           </div>
-          {featured.length > 1 && (
-            <div
-              className="home-featured__dots"
-              onFocus={() => setFeatPaused(true)}
-              onBlur={() => setFeatPaused(false)}
-            >
-              {featured.map((name, i) => (
-                <button
-                  type="button"
-                  key={name}
-                  className={i === activeFeat ? "is-current" : undefined}
-                  aria-label={name}
-                  aria-pressed={i === activeFeat}
-                  onClick={() => setFeatIndex(i)}
-                />
-              ))}
-            </div>
-          )}
           <Link className="home-featured__more" to="/menu">
             {t?.menu?.title} →
           </Link>
