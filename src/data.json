@@ -1,8 +1,10 @@
 {
   "en": {
     "translate": "Español",
-    "phone": "+524754037014",
-    "phoneDisplay": "+52 475 403 7014 · +52 395 115 5068",
+    "phones": [
+      { "display": "+52 475 403 7014", "tel": "+524754037014" },
+      { "display": "+52 395 115 5068", "tel": "+523951155068" }
+    ],
     "nav": {
       "home": "Home",
       "menu": "Menu",
@@ -119,8 +121,10 @@
 
   "es": {
     "translate": "English",
-    "phone": "+524754037014",
-    "phoneDisplay": "+52 475 403 7014 ó +52 395 115 5068",
+    "phones": [
+      { "display": "+52 475 403 7014", "tel": "+524754037014" },
+      { "display": "+52 395 115 5068", "tel": "+523951155068" }
+    ],
     "nav": {
       "home": "Inicio",
       "menu": "Menú",
