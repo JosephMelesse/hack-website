@@ -1,10 +1,5 @@
 // TRANSLATE BUTTON - Tasfia
-// English/Spanish toggle stub. Do not implement translation logic here yet.
-import data from "../data.json";
- 
-
-
-
+// English/Spanish toggle. State lives in App; this only renders and fires onToggle.
 function TranslateButton({ spanish, onToggle, label }) {
   return (
     <button
