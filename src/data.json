@@ -15,44 +15,49 @@
       "featuredTitle": "Check out the Favorites",
       "featured": ["Gorditas with beans", "salsa with meat" , "chese" , "Tortas" , "Tacos arbietos"],
       "aboutTeaserTitle": "Our Story",
-      "aboutTeaser": "This was a family one started by Tirso in 1984. He mange this restroute for decades with intergrity, and a string desire to make out of the hood"
+      "aboutTeaser": "This was a family one started by Tirso in 1984. He mange this restroute for decades with intergrity, and a strong desire to improve his families possiotn"
     },
     "menu": {
       "title": "Menu",
       "items": [
         {
           "name": "Hambergurs",
-          "description": "Made on the fly with freah ingreadants",
+          "description": "Avelible only in the morning. Made on the fly with freah ingreadants",
           "price": "$67"
         },
         {
           "name": "Open Tacos",
-          "description": "Crispy tostada with slasa with meat and avocado or lettuce on top",
+          "description": "Avilible only in the mornings. Crispy tostada with slasa with meat and avocado or lettuce on top",
           "price": "$67"
         },
         {
           "name": "Sandwiches",
-          "description": "these sadwiches are so good. They contain everthing that a sandwhich need",
+          "description": "Avelible only in the morning. these sadwiches are so good. They contain everthing that a sandwhich need",
           "price": "$67"
         },
         {
-          "name": "Milkshakes",
+          "name": "Milkshakes - All day",
           "description": "Made with raw milk, these shakes can come in multiple flavors so just ask what they got in the front",
           "price": "$67"
         },
         {
           
-          "name": "Tortas",
+          "name": "Tortas - Only in the morning",
           "description": "Made on the fly with freah ingreadants",
           "price": "$67"
         },
         {
           
-          "name": "Gorditas",
+          "name": "Gorditas - All day",
           "description": "You can order them with beans, cheese, and salsa with meat",
           "price": "$67"
-        }      
-        
+        },    
+        {
+          
+          "name": "Tacos - Only in the afernoon",
+          "description": "We got chicken, beef (asada), Pork",
+          "price": "$67"
+        }
       ]
     },
     "about": {
@@ -97,56 +102,61 @@
       "title": "Que se le entoja",
       "items": [
         {
-         "name": "Hamurgersa",
-          "description": "vente a comer unas hamugersas delisiosa todo lo que hay",
+         "name": "Hamurgersa - Todo el dia",
+          "description": "vente a comer unas hamugersas delisiosas",
           "price": "$67"
         },
         {
-          "name": "Tacos habiertos",
-          "description":"tacos abirtos vienevn con frijoles y salsa con carne",
+          "name": "Tacos habiertos - solo en la manana",
+          "description":"tacos abirtos con frijoles y salsa con carne",
           "price": "$67"
         },
         {
-          "name": "Sandwiches",
-          "description": "",
+          "name": "Sandwiches - solo en la manana",
+          "description": "Bueno para el desalluno",
           "price": "$67"
         },
         {
-          "name": "Milkshakes",
-          "description": "Made with raw milk, these shakes can come in multiple flavors so just ask what they got in the front",
-          "price": "$67"
-        },
-        {
-          
-          "name": "Tortas",
-          "description": "Made on the fly with freah ingreadants",
+          "name": "Chocomiles - Todo el dia",
+          "description": "Escoje cual qiuer saber que se te entoja",
           "price": "$67"
         },
         {
           
-          "name": "Gorditas",
-          "description": "You can order them with beans, cheese, and salsa with meat",
+          "name": "Tortas - Solo Manana",
+          "description": "Solo en la manana hay y se caban rapido",
           "price": "$67"
+        },
+        {
+          
+          "name": "Gorditas - toda el dia",
+          "description": "Orginales y frescas listos para comer",
+          "price": "$67"
+
+        },     
+        {
+          "name": "Tacos - Solo en la tarde",
+          "description": "Tenemos tocas de pollo, bisted (asada), pastor",
+          "price": "14"
         }      
-        
       ]
     },
     "about": {
-      "title": "",
-      "story": ""
+      "title": "Nuestra Historia",
+      "story": "El resurant creaedo en 1984 por mi abuelito por necidad de salir adelante y sustener su famiia. Con el tiempo el resturant gano una reputacion de tener las gortitas mas famosos en Santa Maria Transportina Jalisco Mexico."
     },
     "contact": {
-      "callTitle": "",
-      "findTitle": "",
-      "address": "",
-      "mapNote": ""
+      "callTitle": "Ablanos",
+      "findTitle": "Encuentranos",
+      "address": "Santa María transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
+      "mapNote": "Mapa próximamente"
     },
     "footer": {
-      "hoursTitle": "",
-      "hours": [""],
-      "addressTitle": "",
-      "address": "",
-      "socialTitle": "",
+      "hoursTitle": "Horas de Servicio",
+      "hours": ["Lunes - Sanado 8:00 am - 3:00 pm 5:00 pm - 10:00 pm Domingo 8:00 am - 3:00 pm 5:00 pm - 11:00 pm "],
+      "addressTitle": "Dirección",
+      "address": "Santa María transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
+      "socialTitle": "Follow Us",
       "social": [{ "instagram": "", "https://www.instagram.com/gorditas_santa_maria/": "" }]
     }
   }
