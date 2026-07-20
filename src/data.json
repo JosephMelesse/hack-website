@@ -1,7 +1,8 @@
 {
-  "es": {
+  "en": {
     "translate": "Español",
-    "phone": "+52 475 403 7014 or +52 395 115 5068",
+    "phone": "+524754037014",
+    "phoneDisplay": "+52 475 403 7014 · +52 395 115 5068",
     "nav": {
       "home": "Home",
       "menu": "Menu",
@@ -12,218 +13,223 @@
     "home": {
       "heroTitle": "Gorditas Santa Maria",
       "heroText": "Freshly made with love",
+      "serviceLine": "Dine-in · Takeout — order by phone.",
       "featuredTitle": "Check out the Favorites",
-      "featured": ["Gorditas with beans", "salsa with meat" , "chese" , "Tortas" , "Tacos arbietos"],
+      "featured": ["Gorditas", "Tortas", "Open Tacos"],
       "aboutTeaserTitle": "Our Story",
-      "aboutTeaser": "This was a family one started by Tirso in 1984. He mange this restroute for decades with intergrity, and a strong desire to improve his families possiotn"
+      "aboutTeaser": "A family restaurant started by Tirso in 1984. He managed it for decades with integrity and a strong desire to improve his family's position."
     },
     "menu": {
       "title": "Menu",
-      "morning":{
-      "items": [
-        {
-          "name": "Hambergurs",
-          "description": "Avelible only in the morning. Made on the fly with freah ingreadants",
-          "price": "$67"
-        },
-        {
-          "name": "Open Tacos",
-          "description": "Crispy tostada with slasa with meat and avocado or lettuce on top",
-          "price": "$67"
-        },
-        {
-          "name": "Sandwiches",
-          "description": "these sadwiches are so good. They contain everthing that a sandwhich need",
-          "price": "$67"
-        },
-        {
-          "name": "Milkshakes",
-          "description": "Made with raw milk, these shakes can come in multiple flavors so just ask what they got in the front",
-          "price": "$67"
-        },
-        {
-          
-          "name": "Tortas",
-          "description": "Made on the fly with freah ingreadants",
-          "price": "$67"
-        },
-        {
-          "name": "Open Tacos",
-          "description": "Crispy tostada with slasa with meat and avocado or lettuce on top",
-          "price": "$67"
-        },
-        {
-          
-          "name": "Gorditas",
-          "description": "You can order them with beans, cheese, and salsa with meat",
-          "price": "$67"
-        }
-      ]
-    },
-    "evening":{ 
-    "items": [
-        {
-          "name": "Hambergurs",
-          "description": "Avelible only in the morning. Made on the fly with freah ingreadants",
-          "price": "$67"
-        },
-        {
-          "name": "Open Tacos",
-          "description": "Crispy tostada with slasa with meat and avocado or lettuce on top",
-          "price": "$67"
-        },
-        {
-          "name": "Milkshakes",
-          "description": "Made with raw milk, these shakes can come in multiple flavors so just ask what they got in the front",
-          "price": "$67"
-        },
-        {
-          
-          "name": "Gorditas",
-          "description": "You can order them with beans, cheese, and salsa with meat",
-          "price": "$67"
-        },    
-        {
-          
-          "name": "Tacos",
-          "description": "We got chicken, beef (asada), Pork",
-          "price": "$67"
-        }
-      ]
-
-    }
-  
+      "morningTitle": "Morning",
+      "eveningTitle": "Evening",
+      "morning": {
+        "items": [
+          {
+            "name": "Hamburgers",
+            "description": "Available only in the morning. Made on the fly with fresh ingredients",
+            "price": "$67"
+          },
+          {
+            "name": "Open Tacos",
+            "description": "Crispy tostada with salsa with meat and avocado or lettuce on top",
+            "price": "$67"
+          },
+          {
+            "name": "Sandwiches",
+            "description": "These sandwiches are so good. They contain everything a sandwich needs",
+            "price": "$67"
+          },
+          {
+            "name": "Milkshakes",
+            "description": "Made with raw milk, these shakes come in multiple flavors so just ask what they have up front",
+            "price": "$67"
+          },
+          {
+            "name": "Tortas",
+            "description": "Made on the fly with fresh ingredients",
+            "price": "$67"
+          },
+          {
+            "name": "Gorditas",
+            "description": "You can order them with beans, cheese, and salsa with meat",
+            "price": "$67"
+          }
+        ]
+      },
+      "evening": {
+        "items": [
+          {
+            "name": "Hamburgers",
+            "description": "Made on the fly with fresh ingredients",
+            "price": "$67"
+          },
+          {
+            "name": "Open Tacos",
+            "description": "Crispy tostada with salsa with meat and avocado or lettuce on top",
+            "price": "$67"
+          },
+          {
+            "name": "Milkshakes",
+            "description": "Made with raw milk, these shakes come in multiple flavors so just ask what they have up front",
+            "price": "$67"
+          },
+          {
+            "name": "Gorditas",
+            "description": "You can order them with beans, cheese, and salsa with meat",
+            "price": "$67"
+          },
+          {
+            "name": "Tacos",
+            "description": "We've got chicken, beef (asada), and pork",
+            "price": "$67"
+          }
+        ]
+      }
     },
     "about": {
-      "title": "The origon of the gorditas",
-      "story": "This resturated was stared by my grandpa and grandma. The reason they started this was so they can suppport their families"
+      "title": "The Origin of the Gorditas",
+      "story": "This restaurant was started by my grandpa and grandma. They started it so they could support their families."
     },
     "contact": {
       "callTitle": "Call Us",
       "findTitle": "Find us",
-      "address": "Santa María transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
+      "address": "Santa María Transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
       "mapNote": "Coming soon"
     },
     "footer": {
+      "since": "Since 1984",
       "hoursTitle": "Hours",
-      "hours": ["Monday-Sunday 8 am - 3 pm"],
-      "addressTitle": "Adress",
-      "address": "Santa María transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
+      "hours": [
+        "Mon-Sat: 8:00 am - 3:00 pm, 5:00 pm - 10:00 pm",
+        "Sun: 8:00 am - 3:00 pm, 5:00 pm - 11:00 pm"
+      ],
+      "addressTitle": "Address",
+      "address": "Santa María Transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
       "socialTitle": "Follow Us",
-      "social": [{ "instagram": "", "https://www.instagram.com/gorditas_santa_maria/": "" }]
+      "social": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/gorditas_santa_maria/"
+        }
+      ]
     }
   },
 
-  "en": {
+  "es": {
     "translate": "English",
-    "phone": "+52 475 403 7014 Ó, +52 395 115 5068",
+    "phone": "+524754037014",
+    "phoneDisplay": "+52 475 403 7014 ó +52 395 115 5068",
     "nav": {
       "home": "Inicio",
-      "menu": "Menú,",
+      "menu": "Menú",
       "about": "Nosotros",
       "contact": "Contacto",
       "call": "Llámanos"
     },
     "home": {
       "heroTitle": "Gorditas Santa Maria",
-      "heroText": "Cocina Mexicana casera  y fresca del ",
-      "featuredTitle": "Los Famosos Gorditas",
-      "featured": ["Gorditas"],
+      "heroText": "Hecho fresco y con amor",
+      "serviceLine": "Para comer aquí o para llevar — ordena por teléfono.",
+      "featuredTitle": "Conoce las Favoritas",
+      "featured": ["Gorditas - Todo el día", "Tortas", "Tacos abiertos"],
       "aboutTeaserTitle": "Nuestra Historia",
-      "aboutTeaser": "why was this resutrant stared. How did tit devleope through time, menu changes workors, goals, how did grow, how did it immact the community ."
+      "aboutTeaser": "Un restaurante familiar iniciado por Tirso en 1984. Lo dirigió por décadas con integridad y con un fuerte deseo de mejorar la posición de su familia."
     },
-   "menu": {
-      "title": "Menu",
-      "morning":{
-      "items": [
-        {
-         "name": "Hamurgersa - Todo el dia",
-          "description": "vente a comer unas hamugersas delisiosas",
-          "price": "$67"
-        },
-        {
-          
-          "name": "Gorditas - toda el dia",
-          "description": "Orginales y frescas listos para comer",
-          "price": "$67"
-
-        },   
-        {
-          "name": "Sandwiches",
-          "description": "Bueno para el desalluno",
-          "price": "$67"
-        },
-        {
-          "name": "Chocomiles - Todo el dia",
-          "description": "Escoje cual qiuer saber que se te entoja",
-          "price": "$67"
-        },
-        {
-          
-          "name": "Tortas",
-          "description": "Solo en la manana hay y se caban rapido",
-          "price": "$67"
-        },
-            
-         {
-          "name": "Tacos habiertos",
-          "description":"tacos abirtos con frijoles y salsa con carne",
-          "price": "$67"
-        }
-        
-      ]
-    },
-    "evening":{ 
-    "items": [
-        {
-         "name": "Hamurgersa - Todo el dia",
-          "description": "vente a comer unas hamugersas delisiosas",
-          "price": "$67"
-        },
-        
-        {
-          "name": "Chocomiles - Todo el dia",
-          "description": "Escoje cual qiuer saber que se te entoja",
-          "price": "$67"
-        },
-        {
-          
-          "name": "Gorditas - toda el dia",
-          "description": "Orginales y frescas listos para comer",
-          "price": "$67"
-
-        },     
-        {
-          "name": "Tacos",
-          "description": "Tenemos tocas de pollo, bisted (asada), pastor",
-          "price": "14"
-        },     
-        {
-          "name": "Tacos habiertos",
-          "description":"tacos abirtos con frijoles y salsa con carne",
-          "price": "$67"
-        }
-        
-      ]
-    }
+    "menu": {
+      "title": "Menú",
+      "morningTitle": "Por la mañana",
+      "eveningTitle": "Por la tarde",
+      "morning": {
+        "items": [
+          {
+            "name": "Hamburguesas - Todo el día",
+            "description": "Ven a comer unas hamburguesas deliciosas",
+            "price": "$67"
+          },
+          {
+            "name": "Gorditas - Todo el día",
+            "description": "Originales y frescas, listas para comer",
+            "price": "$67"
+          },
+          {
+            "name": "Sandwiches",
+            "description": "Bueno para el desayuno",
+            "price": "$67"
+          },
+          {
+            "name": "Chocomiles - Todo el día",
+            "description": "Escoge cualquier sabor que se te antoje",
+            "price": "$67"
+          },
+          {
+            "name": "Tortas",
+            "description": "Solo hay en la mañana y se acaban rápido",
+            "price": "$67"
+          },
+          {
+            "name": "Tacos abiertos",
+            "description": "Tacos abiertos con frijoles y salsa con carne",
+            "price": "$67"
+          }
+        ]
+      },
+      "evening": {
+        "items": [
+          {
+            "name": "Hamburguesas - Todo el día",
+            "description": "Ven a comer unas hamburguesas deliciosas",
+            "price": "$67"
+          },
+          {
+            "name": "Chocomiles - Todo el día",
+            "description": "Escoge cualquier sabor que se te antoje",
+            "price": "$67"
+          },
+          {
+            "name": "Gorditas - Todo el día",
+            "description": "Originales y frescas, listas para comer",
+            "price": "$67"
+          },
+          {
+            "name": "Tacos",
+            "description": "Tenemos tacos de pollo, bistec (asada) y pastor",
+            "price": "$67"
+          },
+          {
+            "name": "Tacos abiertos",
+            "description": "Tacos abiertos con frijoles y salsa con carne",
+            "price": "$67"
+          }
+        ]
+      }
     },
     "about": {
       "title": "Nuestra Historia",
-      "story": "El resurant creaedo en 1984 por mi abuelito por necidad de salir adelante y sustener su famiia. Con el tiempo el resturant gano una reputacion de tener las gortitas mas famosos en Santa Maria Transportina Jalisco Mexico."
+      "story": "El restaurante fue creado en 1984 por mi abuelito por la necesidad de salir adelante y sostener a su familia. Con el tiempo, el restaurante ganó la reputación de tener las gorditas más famosas de Santa María Transpontina, Jalisco, México."
     },
     "contact": {
-      "callTitle": "Ablanos",
-      "findTitle": "Encuentranos",
-      "address": "Santa María transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
+      "callTitle": "Háblanos",
+      "findTitle": "Encuéntranos",
+      "address": "Santa María Transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
       "mapNote": "Mapa próximamente"
     },
     "footer": {
+      "since": "Desde 1984",
       "hoursTitle": "Horas de Servicio",
-      "hours": ["Lunes - Sanado 8:00 am - 3:00 pm 5:00 pm - 10:00 pm Domingo 8:00 am - 3:00 pm 5:00 pm - 11:00 pm "],
+      "hours": [
+        "Lun-Sáb: 8:00 am - 3:00 pm, 5:00 pm - 10:00 pm",
+        "Dom: 8:00 am - 3:00 pm, 5:00 pm - 11:00 pm"
+      ],
       "addressTitle": "Dirección",
-      "address": "Santa María transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
-      "socialTitle": "Follow Us",
-      "social": [{ "instagram": "", "https://www.instagram.com/gorditas_santa_maria/": "" }]
+      "address": "Santa María Transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
+      "socialTitle": "Síguenos",
+      "social": [
+        {
+          "label": "Instagram",
+          "url": "https://www.instagram.com/gorditas_santa_maria/"
+        }
+      ]
     }
   }
 }
