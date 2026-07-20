@@ -107,8 +107,8 @@ p {
 
 .eyebrow {
   font-family: var(--font-body);
-  font-size: 0.8rem;
-  font-weight: 700;
+  font-size: 1.1rem;
+  font-weight: 900;
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: color-mix(in srgb, var(--tinta) 75%, var(--crema));
@@ -640,6 +640,27 @@ p {
 
 .menu-item {
   padding: 1rem 1.25rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.menu-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.menu-item__img,
+.menu-item__img-placeholder {
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius);
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.menu-item__img-placeholder rect {
+  fill: color-mix(in srgb, var(--crema-card) 85%, var(--tinta));
 }
 
 .menu-item__row {

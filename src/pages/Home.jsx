@@ -4,9 +4,9 @@ import { Link } from "react-router-dom";
 import heroImg from "../assets/IMG_20260708_002019_884.jpg";
 import teaserImg from "../assets/IMG_20260708_002131_000.jpg";
 import videoThumb from "../assets/IMG_20260708_002223_321.jpg";
-import featuredA from "../assets/IMG_20260708_002022_950.jpg";
-import featuredB from "../assets/IMG_20260708_002256_459.jpg";
-import featuredC from "../assets/IMG_20260708_002024_863.jpg";
+import featuredA from "../assets/Hamburgers.jpg";
+import featuredB from "../assets/Sandwich.jpg";
+import featuredC from "../assets/Open_Tacos.jpg";
 
 const FEATURED_IMGS = [featuredA, featuredB, featuredC];
 const VIDEO_ID = "hovIsj2oYfM";
@@ -61,6 +61,7 @@ function Home({ t }) {
                   <img
                     src={FEATURED_IMGS[i % FEATURED_IMGS.length]}
                     alt={name}
+                    style={i === 2 ? { objectFit: "contain" } : undefined}
                   />
                   <div className="home-featured__row">
                     <h3>{name}</h3>
