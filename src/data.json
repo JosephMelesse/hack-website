@@ -19,6 +19,7 @@
     },
     "menu": {
       "title": "Menu",
+      "morning":{
       "items": [
         {
           "name": "Hambergurs",
@@ -27,38 +28,71 @@
         },
         {
           "name": "Open Tacos",
-          "description": "Avilible only in the mornings. Crispy tostada with slasa with meat and avocado or lettuce on top",
+          "description": "Crispy tostada with slasa with meat and avocado or lettuce on top",
           "price": "$67"
         },
         {
           "name": "Sandwiches",
-          "description": "Avelible only in the morning. these sadwiches are so good. They contain everthing that a sandwhich need",
+          "description": "these sadwiches are so good. They contain everthing that a sandwhich need",
           "price": "$67"
         },
         {
-          "name": "Milkshakes - All day",
+          "name": "Milkshakes",
           "description": "Made with raw milk, these shakes can come in multiple flavors so just ask what they got in the front",
           "price": "$67"
         },
         {
           
-          "name": "Tortas - Only in the morning",
+          "name": "Tortas",
           "description": "Made on the fly with freah ingreadants",
           "price": "$67"
         },
         {
+          "name": "Open Tacos",
+          "description": "Crispy tostada with slasa with meat and avocado or lettuce on top",
+          "price": "$67"
+        },
+        {
           
-          "name": "Gorditas - All day",
+          "name": "Gorditas",
+          "description": "You can order them with beans, cheese, and salsa with meat",
+          "price": "$67"
+        }
+      ]
+    },
+    "evening":{ 
+    "items": [
+        {
+          "name": "Hambergurs",
+          "description": "Avelible only in the morning. Made on the fly with freah ingreadants",
+          "price": "$67"
+        },
+        {
+          "name": "Open Tacos",
+          "description": "Crispy tostada with slasa with meat and avocado or lettuce on top",
+          "price": "$67"
+        },
+        {
+          "name": "Milkshakes",
+          "description": "Made with raw milk, these shakes can come in multiple flavors so just ask what they got in the front",
+          "price": "$67"
+        },
+        {
+          
+          "name": "Gorditas",
           "description": "You can order them with beans, cheese, and salsa with meat",
           "price": "$67"
         },    
         {
           
-          "name": "Tacos - Only in the afernoon",
+          "name": "Tacos",
           "description": "We got chicken, beef (asada), Pork",
           "price": "$67"
         }
       ]
+
+    }
+  
     },
     "about": {
       "title": "The origon of the gorditas",
@@ -98,8 +132,9 @@
       "aboutTeaserTitle": "Nuestra Historia",
       "aboutTeaser": "why was this resutrant stared. How did tit devleope through time, menu changes workors, goals, how did grow, how did it immact the community ."
     },
-    "menu": {
-      "title": "Que se le entoja",
+   "menu": {
+      "title": "Menu",
+      "morning":{
       "items": [
         {
          "name": "Hamurgersa - Todo el dia",
@@ -107,12 +142,14 @@
           "price": "$67"
         },
         {
-          "name": "Tacos habiertos - solo en la manana",
-          "description":"tacos abirtos con frijoles y salsa con carne",
+          
+          "name": "Gorditas - toda el dia",
+          "description": "Orginales y frescas listos para comer",
           "price": "$67"
-        },
+
+        },   
         {
-          "name": "Sandwiches - solo en la manana",
+          "name": "Sandwiches",
           "description": "Bueno para el desalluno",
           "price": "$67"
         },
@@ -123,8 +160,30 @@
         },
         {
           
-          "name": "Tortas - Solo Manana",
+          "name": "Tortas",
           "description": "Solo en la manana hay y se caban rapido",
+          "price": "$67"
+        },
+            
+         {
+          "name": "Tacos habiertos",
+          "description":"tacos abirtos con frijoles y salsa con carne",
+          "price": "$67"
+        }
+        
+      ]
+    },
+    "evening":{ 
+    "items": [
+        {
+         "name": "Hamurgersa - Todo el dia",
+          "description": "vente a comer unas hamugersas delisiosas",
+          "price": "$67"
+        },
+        
+        {
+          "name": "Chocomiles - Todo el dia",
+          "description": "Escoje cual qiuer saber que se te entoja",
           "price": "$67"
         },
         {
@@ -135,11 +194,18 @@
 
         },     
         {
-          "name": "Tacos - Solo en la tarde",
+          "name": "Tacos",
           "description": "Tenemos tocas de pollo, bisted (asada), pastor",
           "price": "14"
-        }      
+        },     
+        {
+          "name": "Tacos habiertos",
+          "description":"tacos abirtos con frijoles y salsa con carne",
+          "price": "$67"
+        }
+        
       ]
+    }
     },
     "about": {
       "title": "Nuestra Historia",
