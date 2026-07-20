@@ -95,7 +95,8 @@
       "callTitle": "Call Us",
       "findTitle": "Find us",
       "address": "Santa María Transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
-      "mapNote": "Coming soon"
+      "mapNote": "Coming soon",
+      "mapEmbed": "https://maps.google.com/maps?q=21.41401,-102.256663&z=16&hl=en&output=embed"
     },
     "footer": {
       "since": "Since 1984",
@@ -212,7 +213,8 @@
       "callTitle": "Háblanos",
       "findTitle": "Encuéntranos",
       "address": "Santa María Transpontina, Morelos 18, 47296 Santa María Transpontina, Jal., Mexico",
-      "mapNote": "Mapa próximamente"
+      "mapNote": "Mapa próximamente",
+      "mapEmbed": "https://maps.google.com/maps?q=21.41401,-102.256663&z=16&hl=es&output=embed"
     },
     "footer": {
       "since": "Desde 1984",
