@@ -43,6 +43,7 @@ function Home({ t }) {
             </a>
           </div>
           <div className="home-hero__featured">
+            <h2 className="eyebrow">{t?.home?.featuredTitle}</h2>
             <div
               className="home-featured__stage"
               onMouseEnter={() => setFeatPaused(true)}
@@ -121,49 +122,54 @@ function Home({ t }) {
       </section>
 
       <section className="home-about">
-        <div className="container home-about__grid">
-          <div className="home-about__photo">
-            <img src={teaserImg} alt="Tacos served at the family table" />
-          </div>
-          <div>
-            <h2 className="eyebrow">{t?.home?.aboutTeaserTitle}</h2>
-            <p>{t?.home?.aboutTeaser}</p>
-            <Link to="/about">{t?.nav?.about} →</Link>
-            <div className="home-video">
-              {playVideo ? (
-                <iframe
-                  src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1`}
-                  title="Gorditas Santa Maria video"
-                  allow="autoplay; encrypted-media; picture-in-picture"
-                  allowFullScreen
-                />
-              ) : (
-                <button
-                  type="button"
-                  className="home-video__facade"
-                  onClick={() => setPlayVideo(true)}
-                  aria-label="Play video"
-                >
-                  <img src={videoThumb} alt="" />
-                  <span className="home-video__play" aria-hidden="true">
-                    ▶
-                  </span>
-                </button>
-              )}
-            </div>
+        <div className="container">
+          <h2 className="eyebrow">{t?.home?.aboutTeaserTitle}</h2>
+          <p>{t?.home?.aboutTeaser}</p>
+          <Link to="/about">{t?.nav?.about} →</Link>
+        </div>
+      </section>
+
+      <section className="home-video-band">
+        <div className="container">
+          <div className="home-video">
+            {playVideo ? (
+              <iframe
+                src={`https://www.youtube-nocookie.com/embed/${VIDEO_ID}?autoplay=1`}
+                title="Gorditas Santa Maria video"
+                allow="autoplay; encrypted-media; picture-in-picture"
+                allowFullScreen
+              />
+            ) : (
+              <button
+                type="button"
+                className="home-video__facade"
+                onClick={() => setPlayVideo(true)}
+                aria-label="Play video"
+              >
+                <img src={videoThumb} alt="" />
+                <span className="home-video__play" aria-hidden="true">
+                  ▶
+                </span>
+              </button>
+            )}
           </div>
         </div>
       </section>
 
       <section className="home-featured">
         <div className="container">
-          <h2 className="eyebrow">{t?.home?.featuredTitle}</h2>
-          <div className="home-featured__photo">
-            <img
-              src={heroImg}
-              alt="Fresh tortillas, al pastor, and filled gorditas on the griddle"
-            />
-            <div className="tile-divider" aria-hidden="true"></div>
+          <div className="home-featured__photos">
+            <div className="home-featured__photo">
+              <img
+                src={heroImg}
+                alt="Fresh tortillas, al pastor, and filled gorditas on the griddle"
+              />
+              <div className="tile-divider" aria-hidden="true"></div>
+            </div>
+            <div className="home-featured__photo">
+              <img src={teaserImg} alt="Tacos served at the family table" />
+              <div className="tile-divider" aria-hidden="true"></div>
+            </div>
           </div>
           <Link className="home-featured__more" to="/menu">
             {t?.menu?.title} →
