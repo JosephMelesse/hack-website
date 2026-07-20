@@ -13,7 +13,10 @@ const VIDEO_ID = "hovIsj2oYfM";
 
 function Home({ t }) {
   const [playVideo, setPlayVideo] = useState(false);
-  const items = t?.menu?.items ?? [];
+  const items = [
+    ...(t?.menu?.morning?.items ?? []),
+    ...(t?.menu?.evening?.items ?? []),
+  ];
 
   return (
     <>
@@ -22,8 +25,9 @@ function Home({ t }) {
           <div className="home-hero__copy">
             <h1>{t?.home?.heroTitle}</h1>
             <p>{t?.home?.heroText}</p>
+            <p className="home-hero__service">{t?.home?.serviceLine}</p>
             <a className="btn" href={`tel:${t?.phone}`}>
-              {t?.nav?.call} · {t?.phone}
+              {t?.nav?.call} · {t?.phoneDisplay}
             </a>
           </div>
           <div className="home-hero__photo">
