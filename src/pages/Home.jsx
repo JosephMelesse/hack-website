@@ -26,8 +26,8 @@ function Home({ t }) {
             <h1>{t?.home?.heroTitle}</h1>
             <p>{t?.home?.heroText}</p>
             <p className="home-hero__service">{t?.home?.serviceLine}</p>
-            <a className="btn" href={`tel:${t?.phone}`}>
-              {t?.nav?.call} · {t?.phoneDisplay}
+            <a className="btn" href={`tel:${t?.phones?.[0]?.tel}`}>
+              {t?.nav?.call} · {t?.phones?.[0]?.display}
             </a>
           </div>
           <div className="home-hero__photo">
