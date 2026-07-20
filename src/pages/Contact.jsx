@@ -6,9 +6,15 @@ function Contact({ t }) {
         <h1>{t?.nav?.contact}</h1>
         <div className="card contact-call">
           <h2 className="eyebrow">{t?.contact?.callTitle}</h2>
-          <a className="contact-call__phone" href={`tel:${t?.phone}`}>
-            {t?.phoneDisplay}
-          </a>
+          {(t?.phones ?? []).map((p) => (
+            <a
+              className="contact-call__phone"
+              href={`tel:${p?.tel}`}
+              key={p?.tel}
+            >
+              {p?.display}
+            </a>
+          ))}
         </div>
         <section className="contact-find">
           <h2 className="eyebrow">{t?.contact?.findTitle}</h2>
