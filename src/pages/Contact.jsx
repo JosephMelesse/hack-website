@@ -7,7 +7,7 @@ function Contact({ t }) {
         <div className="card contact-call">
           <h2 className="eyebrow">{t?.contact?.callTitle}</h2>
           <a className="contact-call__phone" href={`tel:${t?.phone}`}>
-            {t?.phone}
+            {t?.phoneDisplay}
           </a>
         </div>
         <section className="contact-find">
