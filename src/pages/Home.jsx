@@ -1,5 +1,5 @@
 // HOME: Joseph
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import heroImg from "../assets/IMG_20260708_002019_884.jpg";
 import teaserImg from "../assets/IMG_20260708_002131_000.jpg";
@@ -17,6 +17,18 @@ function Home({ t }) {
     ...(t?.menu?.morning?.items ?? []),
     ...(t?.menu?.evening?.items ?? []),
   ];
+
+  const featured = t?.home?.featured ?? [];
+  const [featIndex, setFeatIndex] = useState(0);
+  const [featPaused, setFeatPaused] = useState(false);
+  const activeFeat = featured.length ? featIndex % featured.length : 0;
+
+  useEffect(() => {
+    if (featPaused || featured.length < 2) return;
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+    const id = setInterval(() => setFeatIndex((i) => i + 1), 4000);
+    return () => clearInterval(id);
+  }, [featPaused, featured.length]);
 
   return (
     <>
@@ -78,9 +90,20 @@ function Home({ t }) {
       <section className="home-featured">
         <div className="container">
           <h2 className="eyebrow">{t?.home?.featuredTitle}</h2>
-          <div className="home-featured__grid">
-            {(t?.home?.featured ?? []).map((name, i) => (
-              <article className="card home-featured__card" key={name}>
+          <div
+            className="home-featured__stage"
+            onMouseEnter={() => setFeatPaused(true)}
+            onMouseLeave={() => setFeatPaused(false)}
+          >
+            {featured.map((name, i) => (
+              <article
+                className={
+                  "card home-featured__card" +
+                  (i === activeFeat ? " home-featured__card--active" : "")
+                }
+                key={name}
+                aria-hidden={i !== activeFeat}
+              >
                 <img
                   src={FEATURED_IMGS[i % FEATURED_IMGS.length]}
                   alt={name}
@@ -94,6 +117,24 @@ function Home({ t }) {
               </article>
             ))}
           </div>
+          {featured.length > 1 && (
+            <div
+              className="home-featured__dots"
+              onFocus={() => setFeatPaused(true)}
+              onBlur={() => setFeatPaused(false)}
+            >
+              {featured.map((name, i) => (
+                <button
+                  type="button"
+                  key={name}
+                  className={i === activeFeat ? "is-current" : undefined}
+                  aria-label={name}
+                  aria-pressed={i === activeFeat}
+                  onClick={() => setFeatIndex(i)}
+                />
+              ))}
+            </div>
+          )}
           <Link className="home-featured__more" to="/menu">
             {t?.menu?.title} →
           </Link>
