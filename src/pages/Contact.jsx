@@ -15,9 +15,22 @@ function Contact({ t }) {
           <p>
             {t?.contact?.address} · {(t?.footer?.hours ?? []).join(" · ")}
           </p>
-          {/* real map embed pending (DESIGN.md §7) */}
-          <div className="contact-map">
-            <span>{t?.contact?.mapNote}</span>
+          <div
+            className={
+              t?.contact?.mapEmbed ? "contact-map contact-map--live" : "contact-map"
+            }
+          >
+            {t?.contact?.mapEmbed ? (
+              <iframe
+                src={t.contact.mapEmbed}
+                title={t?.contact?.findTitle}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                allowFullScreen
+              />
+            ) : (
+              <span>{t?.contact?.mapNote}</span>
+            )}
           </div>
         </section>
       </div>
