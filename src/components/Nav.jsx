@@ -23,9 +23,6 @@ function Nav({ t, spanish, onToggle }) {
             onToggle={onToggle}
             label={t?.translate}
           />
-          <a className="btn" href={`tel:${t?.phone}`}>
-            {t?.nav?.call}
-          </a>
         </div>
       </div>
       <div className="tile-divider" aria-hidden="true"></div>
