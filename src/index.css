@@ -404,7 +404,7 @@ p {
 .home-featured__stage .home-featured__card {
   grid-area: 1 / 1;
   opacity: 0;
-  transition: opacity 600ms ease;
+  transition: opacity 300ms ease;
   pointer-events: none;
 }
 

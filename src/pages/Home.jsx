@@ -26,7 +26,7 @@ function Home({ t }) {
   useEffect(() => {
     if (featPaused || featured.length < 2) return;
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const id = setInterval(() => setFeatIndex((i) => i + 1), 4000);
+    const id = setInterval(() => setFeatIndex((i) => i + 1), 2000);
     return () => clearInterval(id);
   }, [featPaused, featured.length]);
 
