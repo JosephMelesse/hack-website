@@ -194,10 +194,21 @@ p {
   gap: 0.75rem;
 }
 
-/* the TranslateButton stub renders an empty <button>; keep it hidden
-   until it has a label */
-.site-header__actions button:empty {
-  display: none;
+.translate-btn {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.55em 1.2em;
+  border: 2px solid var(--cobalto);
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--cobalto);
+  cursor: pointer;
+  transition: background 150ms ease, color 150ms ease;
+}
+.translate-btn:hover {
+  background: var(--cobalto);
+  color: var(--crema-card);
 }
 
 .site-nav {
@@ -300,6 +311,12 @@ p {
 .home-hero__copy p {
   font-size: 1.1rem;
   max-width: 46ch;
+}
+
+.home-hero__service {
+  font-weight: 700;
+  color: color-mix(in srgb, var(--tinta) 75%, var(--crema));
+  margin-bottom: 1rem;
 }
 
 .home-hero__photo {
@@ -499,6 +516,69 @@ p {
   border-radius: var(--radius);
   color: color-mix(in srgb, var(--tinta) 75%, var(--crema));
   font-weight: 700;
+}
+
+/* ---------- menu page ---------- */
+
+.menu {
+  padding-block: 2.5rem 3.5rem;
+}
+
+.menu h1 {
+  margin-bottom: 1.5rem;
+}
+
+.menu .eyebrow {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+}
+
+.menu-item {
+  padding: 1rem 1.25rem;
+}
+
+.menu-item__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.menu-item__price {
+  font-family: var(--font-display);
+  color: var(--rojo);
+  white-space: nowrap;
+}
+
+.menu-item p {
+  margin-top: 0.35rem;
+  color: color-mix(in srgb, var(--tinta) 85%, var(--crema));
+  max-width: 60ch;
+}
+
+@media (min-width: 720px) {
+  .menu-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* ---------- about page ---------- */
+
+.about {
+  padding-block: 2.5rem 3.5rem;
+}
+
+.about p {
+  font-size: 1.1rem;
+  max-width: 60ch;
 }
 
 /* ---------- motion ---------- */
