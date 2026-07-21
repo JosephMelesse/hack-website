@@ -178,18 +178,7 @@ function Home({ t }) {
         </div>
       </section>
 
-      <section className="home-strip">
-        <div className="container home-strip__grid">
-          <div>
-            <h2 className="eyebrow">{t?.footer?.hoursTitle}</h2>
-            <p>{(t?.footer?.hours ?? []).join(" · ")}</p>
-          </div>
-          <div>
-            <h2 className="eyebrow">{t?.footer?.addressTitle}</h2>
-            <p>{t?.footer?.address}</p>
-          </div>
-        </div>
-      </section>
+
     </>
   );
 }

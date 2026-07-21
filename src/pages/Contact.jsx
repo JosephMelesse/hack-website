@@ -19,7 +19,7 @@ function Contact({ t }) {
         <section className="contact-find">
           <h2 className="eyebrow">{t?.contact?.findTitle}</h2>
           <p>
-            {t?.contact?.address} · {(t?.footer?.hours ?? []).join(" · ")}
+            {t?.contact?.address}
           </p>
           <div
             className={
